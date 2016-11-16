@@ -87,8 +87,8 @@
                 <user.password></user.password>
                 <grid2.hub>http://adminas:17384254-532e-4e0f-9059-c5b186d64af3@ondemand.saucelabs.com:80/wd/hub</grid2.hub>
                 <site.url>http://www.w3schools.com/html/html5_draganddrop.asp</site.url>
-                <browser.name>firefox</browser.name>
-                <browser.version>42</browser.version>
+                <browser.name>chrome</browser.name>
+                <browser.version></browser.version>
                 <browser.platform>windows</browser.platform>
             </properties>
             <activation>
