@@ -30,7 +30,7 @@ public class HomePageTest extends TestBase {
 
     @Before
     public void loadPage() {
-        loadPage(getPageLocation());
+        loadPage(PageLocation.EXADEL_HOME);
     }
 
     @Test
@@ -39,30 +39,5 @@ public class HomePageTest extends TestBase {
         waitForElementDisplayed("//*[@id='menu-item-1816']");
         homePage.getApplicationDevelopmentLink().click();
         Assert.assertEquals(websiteUrl + PageLocation.APPLICATION_DEVELOPMENT.getUrl(), webDriver.getCurrentUrl());
-    }
-
-    @Test
-    public void dragAndDrop() throws InterruptedException {
-        Actions builder = new Actions(webDriver);
-        builder.moveToElement(webDriver.findElement(By.id("drag1")), 1, 1)
-                .clickAndHold()
-                .moveByOffset(500, 100)
-                .build()
-                .perform();
-        synchronized (webDriver) {
-            System.out.println("Waiting...");
-            webDriver.wait(300);
-            builder.release().build().perform();
-        }
-    }
-
-
-    /**
-     * @return the page location
-     * @desc Gets the page location.
-     */
-    public static PageLocation getPageLocation() {
-        pageLocation = null;
-        return pageLocation;
     }
 }

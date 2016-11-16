@@ -89,7 +89,7 @@ public abstract class TestBase {
      * @param pageLocation The {@link PageLocation}
      */
     protected static void loadPage(PageLocation pageLocation) {
-        webDriver.get(websiteUrl);
+        webDriver.get(websiteUrl + pageLocation.getUrl());
     }
 
     /**

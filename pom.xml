@@ -49,6 +49,11 @@
             <artifactId>selenium-ie-driver</artifactId>
             <version>3.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.9.13.6</version>
+        </dependency>
     </dependencies>
     <build>
         <resources>
@@ -85,11 +90,12 @@
                 <env>local</env>
                 <user.username></user.username>
                 <user.password></user.password>
-                <grid2.hub>http://adminas:17384254-532e-4e0f-9059-c5b186d64af3@ondemand.saucelabs.com:80/wd/hub</grid2.hub>
-                <site.url>http://www.w3schools.com/html/html5_draganddrop.asp</site.url>
+                <grid2.hub>http://adminas:17384254-532e-4e0f-9059-c5b186d64af3@ondemand.saucelabs.com:80/wd/hub
+                </grid2.hub>
+                <site.url>https://www.exadel.com</site.url>
                 <browser.name>chrome</browser.name>
                 <browser.version></browser.version>
-                <browser.platform>windows</browser.platform>
+                <browser.platform></browser.platform>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
