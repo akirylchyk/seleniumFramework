@@ -3,46 +3,51 @@ package com.exadel.pages;
 
 import org.testng.annotations.*;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class TestNgTest extends TestBase {
+
+    private static final Logger LOGGER = Logger.getLogger(TestNgTest.class.getName());
 
     @BeforeGroups("shopping")
     public void beforeGroups() {
-        System.out.println("@BeforeGroups");
+        LOGGER.log(Level.INFO, "@BeforeGroups");
     }
 
     @AfterGroups("shopping")
     public void afterGroups() {
-        System.out.println("@AfterGroups");
+        LOGGER.log(Level.INFO, "@AfterGroups");
     }
 
     @BeforeClass
     public void beforeClass() {
-        System.out.println("@BeforeClass");
+        LOGGER.log(Level.INFO, "@BeforeClass");
     }
 
     @AfterClass
     public void afterClass() {
-        System.out.println("@AfterClass");
+        LOGGER.log(Level.INFO, "@AfterClass");
     }
 
     @BeforeMethod
     public void beforeMethod() {
-        System.out.println("@BeforeMethod");
+        LOGGER.log(Level.INFO, "@BeforeMethod");
     }
 
     @AfterMethod
     public void afterMethod() {
-        System.out.println("@AfterMethod");
+        LOGGER.log(Level.INFO, "@AfterMethod");
     }
 
     @Test(groups = "shopping")
     public void runTest1() {
-        System.out.println("@Test - runTest1");
+        LOGGER.log(Level.INFO, "@Test - runTest1");
     }
 
     @Test
     public void runTest2() {
-        System.out.println("@Test - runTest2");
+        LOGGER.log(Level.INFO, "@Test - runTest2");
     }
 
 }
