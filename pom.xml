@@ -90,12 +90,11 @@
                 <env>local</env>
                 <user.username></user.username>
                 <user.password></user.password>
-                <grid2.hub>http://adminas:17384254-532e-4e0f-9059-c5b186d64af3@ondemand.saucelabs.com:80/wd/hub
-                </grid2.hub>
+                <grid2.hub>http://adminas:17384254-532e-4e0f-9059-c5b186d64af3@ondemand.saucelabs.com:80/wd/hub</grid2.hub>
                 <site.url>https://www.exadel.com</site.url>
                 <browser.name>chrome</browser.name>
                 <browser.version></browser.version>
-                <browser.platform></browser.platform>
+                <browser.platform>windows</browser.platform>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>

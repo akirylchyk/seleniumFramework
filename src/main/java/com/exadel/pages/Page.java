@@ -12,15 +12,20 @@ public class Page {
 
     protected WebDriver webDriver;
 
-    @CacheLookup
-    @FindBy(id = "menu-item-1829")
+    @FindBy(xpath = "//*[@id=\"menu-item-1829\"]/a")
     private WebElement practiceAreaLink;
 
     @CacheLookup
     @FindBy(xpath = "//*[@id='menu-item-1816']")
     private WebElement applicationDevelopmentLink;
 
+    @CacheLookup
+    @FindBy(xpath = "//a")
+    private List<WebElement> allLinks;
 
+    public List<WebElement> getAllLinks() {
+        return allLinks;
+    }
     public WebElement getApplicationDevelopmentLink() {
         return applicationDevelopmentLink;
     }

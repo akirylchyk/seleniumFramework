@@ -12,42 +12,42 @@ public class TestNgTest extends TestBase {
 
     @BeforeGroups("shopping")
     public void beforeGroups() {
-        LOGGER.log(Level.INFO, "@BeforeGroups");
+        LOGGER.log(Level.ALL, "@BeforeGroups");
     }
 
     @AfterGroups("shopping")
     public void afterGroups() {
-        LOGGER.log(Level.INFO, "@AfterGroups");
+        LOGGER.log(Level.ALL, "@AfterGroups");
     }
 
     @BeforeClass
     public void beforeClass() {
-        LOGGER.log(Level.INFO, "@BeforeClass");
+        LOGGER.log(Level.ALL, "@BeforeClass");
     }
 
     @AfterClass
     public void afterClass() {
-        LOGGER.log(Level.INFO, "@AfterClass");
+        LOGGER.log(Level.ALL, "@AfterClass");
     }
 
     @BeforeMethod
     public void beforeMethod() {
-        LOGGER.log(Level.INFO, "@BeforeMethod");
+        LOGGER.log(Level.ALL, "@BeforeMethod");
     }
 
     @AfterMethod
     public void afterMethod() {
-        LOGGER.log(Level.INFO, "@AfterMethod");
+        LOGGER.log(Level.ALL, "@AfterMethod");
     }
 
     @Test(groups = "shopping")
     public void runTest1() {
-        LOGGER.log(Level.INFO, "@Test - runTest1");
+        LOGGER.log(Level.ALL, "@Test - runTest1");
     }
 
     @Test
     public void runTest2() {
-        LOGGER.log(Level.INFO, "@Test - runTest2");
+        LOGGER.log(Level.ALL, "@Test - runTest2");
     }
 
 }
