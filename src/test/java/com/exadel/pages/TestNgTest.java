@@ -41,7 +41,7 @@ public class TestNgTest extends TestBase {
         LOGGER.log(Level.INFO, "@AfterMethod");
     }
 
-    @Test(groups = "shopping", timeOut = 5000)
+    @Test(threadPoolSize = 4, invocationCount = 10000)
     public void runTest1() throws InterruptedException {
         LOGGER.log(Level.INFO, "@Test - runTest1");
         Assert.assertTrue(true);

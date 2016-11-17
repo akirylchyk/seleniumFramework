@@ -37,5 +37,4 @@ public class DifferenceTest extends TestBase {
         System.out.println(page.getPracticeAreaLink().getTagName());
         System.out.println(page.getPracticeAreaLink().getSize());
     }
-
 }
